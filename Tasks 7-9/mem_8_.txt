@@ -1,0 +1,2176 @@
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  109.586 MiB  109.586 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  109.586 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  109.586 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  109.586 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  109.586 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  109.586 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.000 MiB  111.000 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    42  111.176 MiB  111.176 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.176 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    44  111.000 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.000 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.000 MiB    0.000 MiB   	    comm.Barrier()
+    46  111.176 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.176 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.504 MiB    0.328 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.504 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  111.000 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.000 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.180 MiB  111.180 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.180 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.180 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.180 MiB    0.000 MiB   	    comm.Barrier()
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    49                             
+    50  111.559 MiB    0.379 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.559 MiB    0.000 MiB   	    return A_shifted
+
+
+    42  110.922 MiB  110.922 MiB   @profile
+    42  110.820 MiB  110.820 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.922 MiB    0.000 MiB   	for j in range(n_iter):
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.820 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.922 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    45                             
+    46  110.820 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.035 MiB    0.215 MiB   	    comm.Barrier()
+    47                             
+    48  111.195 MiB    0.273 MiB   	    comm.Barrier()
+    49                             
+    49                             
+    50  111.035 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    50  111.195 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.035 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.195 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.098 MiB  111.098 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.629 MiB  110.629 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.629 MiB    0.000 MiB   	for j in range(n_iter):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.410 MiB  111.410 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.410 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.625 MiB    0.215 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.098 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.098 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    42  110.398 MiB  110.398 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.398 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.398 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    45                             
+    46  110.629 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.629 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    48  111.625 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.625 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.625 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  110.840 MiB    0.211 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.840 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  111.098 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.098 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.098 MiB    0.000 MiB   	    return A_shifted
+
+
+    47                             
+    48  110.398 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.730 MiB    0.332 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.730 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.906 MiB  110.906 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.875 MiB  110.875 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.906 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.906 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.906 MiB    0.000 MiB   	    comm.Barrier()
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.875 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.875 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    42  110.441 MiB  110.441 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.441 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.441 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.906 MiB  110.906 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.906 MiB    0.000 MiB   	for j in range(n_iter):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.359 MiB  111.359 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.359 MiB    0.000 MiB   	for j in range(n_iter):
+    49                             
+    50  110.906 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.906 MiB    0.000 MiB   	    return A_shifted
+
+
+    45                             
+    46  111.359 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.359 MiB    0.000 MiB   	    comm.Barrier()
+    48  110.875 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.875 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.875 MiB    0.000 MiB   	    return A_shifted
+
+
+    47                             
+    48  110.656 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  110.656 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.656 MiB    0.000 MiB   	    return A_shifted
+
+
+    45                             
+    46  110.906 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.234 MiB    0.328 MiB   	    comm.Barrier()
+    49                             
+    49                             
+    50  111.359 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.359 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  111.234 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.234 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.289 MiB  111.289 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.289 MiB    0.000 MiB   	for j in range(n_iter):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.984 MiB  110.984 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.984 MiB    0.000 MiB   	for j in range(n_iter):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.418 MiB  111.418 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.418 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.418 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.418 MiB    0.000 MiB   	    comm.Barrier()
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.473 MiB  110.473 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.473 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.473 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.008 MiB  111.008 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.008 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.008 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.008 MiB    0.000 MiB   	    comm.Barrier()
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.234 MiB  111.234 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.234 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.234 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    45                             
+    46  111.289 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.613 MiB    0.324 MiB   	    comm.Barrier()
+    49                             
+    45                             
+    46  111.195 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.195 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.195 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    49                             
+    50  111.418 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.418 MiB    0.000 MiB   	    return A_shifted
+
+
+    47                             
+    48  110.742 MiB    0.270 MiB   	    comm.Barrier()
+    49                             
+    50  110.742 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.742 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  111.008 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.008 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  111.504 MiB    0.270 MiB   	    comm.Barrier()
+    49                             
+    50  111.504 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.504 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  111.613 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.613 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.195 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.031 MiB  111.031 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.031 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.031 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.031 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.031 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.031 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.680 MiB  110.680 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.953 MiB  110.953 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.941 MiB  110.941 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.426 MiB  111.426 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.246 MiB  111.246 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.395 MiB  111.395 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.680 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.680 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.953 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.953 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    44  110.941 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.941 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    44  111.426 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.426 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.246 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.246 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    44  111.395 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.395 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.395 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.395 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.395 MiB    0.000 MiB   	    return A_shifted
+
+
+    47                             
+    48  111.516 MiB    0.270 MiB   	    comm.Barrier()
+    49                             
+    50  111.516 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.516 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  110.680 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.680 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.680 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  111.168 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.168 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.168 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  110.941 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.941 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.941 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  111.426 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.426 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.426 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.410 MiB  111.410 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.410 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.410 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.098 MiB  111.098 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.098 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.980 MiB  110.980 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.980 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.980 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.684 MiB  110.684 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.684 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.684 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.879 MiB  110.879 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.879 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.090 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.090 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.090 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.090 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.977 MiB  110.977 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.977 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.188 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.188 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.828 MiB  110.828 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.828 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.828 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.039 MiB    0.211 MiB   	    comm.Barrier()
+    49                             
+    50  111.039 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.559 MiB  111.559 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.559 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.559 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.559 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.559 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.559 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  111.410 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.793 MiB    0.383 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.793 MiB    0.000 MiB   	    return A_shifted
+
+
+    46  111.098 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.098 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.098 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.098 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  111.191 MiB    0.211 MiB   	    comm.Barrier()
+    49                             
+    50  111.191 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.191 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  110.895 MiB    0.211 MiB   	    comm.Barrier()
+    49                             
+    50  110.895 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.895 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  111.188 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.188 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.039 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.117 MiB  111.117 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.117 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.117 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.441 MiB    0.324 MiB   	    comm.Barrier()
+    49                             
+    50  111.441 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.441 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.395 MiB  110.395 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.996 MiB  110.996 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.891 MiB  110.891 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.867 MiB  110.867 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.402 MiB  111.402 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.695 MiB  110.695 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.695 MiB    0.000 MiB   	for j in range(n_iter):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.863 MiB  110.863 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.863 MiB    0.000 MiB   	for j in range(n_iter):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.066 MiB  111.066 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.066 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.609 MiB    0.215 MiB   	for j in range(n_iter):
+    45                             
+    46  110.609 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.609 MiB    0.000 MiB   	    comm.Barrier()
+    44  110.996 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.996 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.996 MiB    0.000 MiB   	    comm.Barrier()
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.891 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.891 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.867 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.078 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.078 MiB    0.000 MiB   	    comm.Barrier()
+    44  111.402 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.402 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.617 MiB    0.215 MiB   	    comm.Barrier()
+    45                             
+    46  110.906 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.906 MiB    0.000 MiB   	    comm.Barrier()
+    45                             
+    46  110.863 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.078 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    46  111.066 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.336 MiB    0.270 MiB   	    comm.Barrier()
+    49                             
+    50  111.336 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.336 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  111.078 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.078 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  110.609 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.609 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  110.996 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.996 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  111.105 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.105 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.105 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  111.078 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.078 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  111.617 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.617 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  110.906 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.906 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.309 MiB  110.309 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.309 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.684 MiB  110.684 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.684 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.684 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.762 MiB  110.762 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.762 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.762 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.914 MiB  110.914 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.914 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.914 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.914 MiB    0.000 MiB   	    comm.Barrier()
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.293 MiB  111.293 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.293 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.293 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.566 MiB    0.273 MiB   	    comm.Barrier()
+    49                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.789 MiB  110.789 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.789 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.789 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.004 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.004 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    46  110.309 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.520 MiB    0.211 MiB   	    comm.Barrier()
+    49                             
+    50  110.520 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.520 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  110.684 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.684 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.684 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  110.992 MiB    0.230 MiB   	    comm.Barrier()
+    49                             
+    50  110.992 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.992 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  110.914 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.914 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  111.566 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.566 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.004 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.273 MiB  111.273 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.273 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.273 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.273 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.273 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.273 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.598 MiB  110.598 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.598 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.598 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.598 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.598 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.598 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.074 MiB  111.074 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.074 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.074 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.344 MiB    0.270 MiB   	    comm.Barrier()
+    49                             
+    50  111.344 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.344 MiB    0.000 MiB   	    return A_shifted
+
+
+    42  111.074 MiB  111.074 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.074 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.074 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.309 MiB    0.234 MiB   	    comm.Barrier()
+    49                             
+    50  111.309 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.309 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.453 MiB  110.453 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.453 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.453 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.668 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  110.668 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.668 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.289 MiB  111.289 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.855 MiB  110.855 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.215 MiB  111.215 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.551 MiB  110.551 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.492 MiB  111.492 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.492 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.113 MiB  111.113 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.113 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    44  111.289 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.289 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.855 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.855 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.340 MiB  111.340 MiB   @profile
+    44  111.215 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.215 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.215 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    44  110.551 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.766 MiB    0.215 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.766 MiB    0.000 MiB   	    comm.Barrier()
+    46  111.492 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.492 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    46  111.113 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.113 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.113 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.113 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  111.492 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.492 MiB    0.000 MiB   	    return A_shifted
+
+
+    47                             
+    48  111.289 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.289 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.289 MiB    0.000 MiB   	    return A_shifted
+
+
+    47                             
+    48  111.070 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.070 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.070 MiB    0.000 MiB   	    return A_shifted
+
+
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.340 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.340 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.340 MiB    0.000 MiB   	    comm.Barrier()
+    50  111.215 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.215 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  110.766 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.766 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  111.340 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.340 MiB    0.000 MiB   	    return A_shifted
+
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.477 MiB  111.477 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.477 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.477 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.477 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.477 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.477 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.152 MiB  111.152 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.152 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.781 MiB  110.781 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.996 MiB    0.215 MiB   	for j in range(n_iter):
+    45                             
+    46  110.996 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    46  111.152 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.426 MiB    0.273 MiB   	    comm.Barrier()
+    49                             
+    50  111.426 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    47                             
+    48  110.996 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.996 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.996 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.426 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.027 MiB  111.027 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.027 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.523 MiB  110.523 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    46  111.027 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.406 MiB    0.379 MiB   	    comm.Barrier()
+    49                             
+    44  110.523 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.523 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.855 MiB    0.332 MiB   	    comm.Barrier()
+    49                             
+    50  110.855 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    50  111.406 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.406 MiB    0.000 MiB   	    return A_shifted
+
+
+================================================
+    42  111.234 MiB  111.234 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.047 MiB  111.047 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.047 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.047 MiB    0.000 MiB   Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.652 MiB  110.652 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.652 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.652 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.973 MiB  110.973 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.449 MiB  111.449 MiB   @profile
+    51  110.855 MiB    0.000 MiB   	    return A_shifted
+
+
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.234 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.234 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.234 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.234 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.234 MiB    0.000 MiB   	    return A_shifted
+
+
+	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.047 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.047 MiB    0.000 MiB   	    47                             
+    48  110.652 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.652 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.652 MiB    0.000 MiB   	    return A_shifted
+
+
+    44  110.973 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.184 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    42  111.078 MiB  111.078 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.078 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.078 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.449 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    48  111.184 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.184 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.184 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  111.078 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    46  111.449 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    50  111.078 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    48  111.449 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.449 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.449 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.078 MiB    0.000 MiB   	    return A_shifted
+
+
+    A_shifted = comm.gather(A_shifted, 0)
+    51  111.047 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.613 MiB  110.613 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.613 MiB    0.000 MiB   	Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.656 MiB  110.656 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.656 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.656 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.656 MiB    0.000 MiB   	    comm.Barrier()
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.754 MiB  110.754 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.754 MiB    0.000 MiB   Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.465 MiB  110.465 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.465 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.465 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.680 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+for j in range(n_iter):
+    45                             
+    46  110.613 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.613 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    49                             
+    50  110.656 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.656 MiB    0.000 MiB   	    return A_shifted
+
+
+	for j in range(n_iter):
+    50  110.680 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.680 MiB    0.000 MiB   	    return A_shifted
+
+
+    45                             
+    46  110.754 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.754 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.754 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    50  110.613 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.613 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  110.754 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.309 MiB  111.309 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.309 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.309 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.633 MiB    0.324 MiB   	    comm.Barrier()
+    49                             
+    50  111.633 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.633 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+Filename: Task8.py
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.730 MiB  110.730 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.730 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.730 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.730 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.730 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.730 MiB    0.000 MiB   	    return A_shifted
+
+
+    42  110.645 MiB  110.645 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.645 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.645 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.645 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.645 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.645 MiB    0.000 MiB   	    return A_shifted
+
+
+================================================
+    42  111.102 MiB  111.102 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.102 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.102 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.102 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.102 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.102 MiB    0.000 MiB   	    return A_shifted
+
+
+================================================
+    42  111.375 MiB  111.375 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.375 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.375 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.375 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.375 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.375 MiB    0.000 MiB   	    return A_shifted
+
+
+    42  111.039 MiB  111.039 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.039 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.039 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.039 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.039 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.039 MiB    0.000 MiB   	    return A_shifted
+
+
+================================================
+    42  110.895 MiB  110.895 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.895 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.105 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.105 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.105 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.105 MiB    0.000 MiB   	    return A_shifted
+
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.867 MiB  110.867 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.867 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.078 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.078 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.078 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.078 MiB    0.000 MiB   	    return A_shifted
+
+
+    42  110.906 MiB  110.906 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.906 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.121 MiB    0.215 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.121 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.121 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.121 MiB    0.000 MiB   	    return A_shifted
+
+
+    42  110.992 MiB  110.992 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.992 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.992 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.992 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.992 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.992 MiB    0.000 MiB   	    return A_shifted
+
+
+    42  111.000 MiB  111.000 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.000 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.211 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.211 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.211 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.211 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.418 MiB  110.418 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.418 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.418 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.633 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  110.633 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.633 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.332 MiB  111.332 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.332 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.332 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.547 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.547 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.547 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.297 MiB  111.297 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.297 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.469 MiB  110.469 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.469 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.469 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.688 MiB    0.219 MiB   	    comm.Barrier()
+    49                             
+    50  110.688 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.688 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.934 MiB  110.934 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.934 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.145 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.145 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.145 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.145 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.887 MiB  110.887 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.887 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.098 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.098 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.098 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.098 MiB    0.000 MiB   	    return A_shifted
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.074 MiB  111.074 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.074 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.074 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.074 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.074 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.074 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.141 MiB  111.141 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.141 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.141 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.355 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.355 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.355 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.859 MiB  110.859 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.859 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.070 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.070 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.070 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.070 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.680 MiB  110.680 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.680 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.680 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.680 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.680 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.680 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.195 MiB  111.195 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.195 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.195 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.195 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.195 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.195 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.430 MiB  110.430 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.430 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.430 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.707 MiB    0.277 MiB   	    comm.Barrier()
+    49                             
+    50  110.707 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.707 MiB    0.000 MiB   	    return A_shifted
+
+
+    46  111.297 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.621 MiB    0.324 MiB   	    comm.Barrier()
+    49                             
+    50  111.621 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.621 MiB    0.000 MiB   	    return A_shifted
+
+
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.914 MiB  110.914 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.125 MiB    0.211 MiB   	for j in range(n_iter):
+    45                             
+    46  111.125 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.125 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.125 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.125 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.172 MiB  111.172 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.387 MiB    0.215 MiB   	for j in range(n_iter):
+    45                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.477 MiB  111.477 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.477 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.477 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.477 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.477 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.434 MiB  111.434 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.434 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.434 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.434 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.434 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    46  111.387 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.387 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.387 MiB    0.000 MiB       51  111.477 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.434 MiB    0.000 MiB   	    return A_shifted
+
+
+	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.387 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.281 MiB  111.281 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.281 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.281 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.609 MiB    0.328 MiB   	    comm.Barrier()
+    49                             
+    50  112.586 MiB    0.977 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  112.586 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.898 MiB  110.898 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.605 MiB  111.605 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.605 MiB    0.000 MiB   	for j in range(n_iter):
+    44  111.113 MiB    0.215 MiB   	for j in range(n_iter):
+    45                             
+    46  111.113 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    45                             
+    46  111.605 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.605 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    47                             
+    48  111.113 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.605 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.605 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  111.113 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.113 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.012 MiB  111.012 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+================================================
+    42  111.184 MiB  111.184 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.184 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.184 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.715 MiB  110.715 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.117 MiB  111.117 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.117 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.117 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.188 MiB  111.188 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    44  111.012 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.012 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.012 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.012 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    47                             
+    48  111.398 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.398 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.398 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.012 MiB    0.000 MiB   	    return A_shifted
+
+
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.715 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.926 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.926 MiB    0.000 MiB   	    comm.Barrier()
+    42  110.523 MiB  110.523 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.734 MiB    0.211 MiB   	for j in range(n_iter):
+    45                             
+    46  110.734 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.734 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    47                             
+    48  111.391 MiB    0.273 MiB   	    comm.Barrier()
+    49                             
+    50  111.391 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.391 MiB    0.000 MiB   	    return A_shifted
+
+
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.188 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.188 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.188 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    42  111.367 MiB  111.367 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.367 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.367 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    49                             
+    50  110.926 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.926 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  110.734 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.734 MiB    0.000 MiB   	    return A_shifted
+
+
+    50  111.188 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.188 MiB    0.000 MiB   	    return A_shifted
+
+
+    48  111.582 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.582 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.582 MiB    0.000 MiB   	    return A_shifted
+
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.137 MiB  111.137 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.137 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.137 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.137 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.137 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.137 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.949 MiB  110.949 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.949 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.949 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.164 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.164 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.164 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.891 MiB  110.891 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.891 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.891 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.105 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.191 MiB  111.191 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.191 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.191 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.191 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.191 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    50  111.105 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.105 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.191 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.969 MiB  110.969 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.969 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.969 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.969 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.969 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.969 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.348 MiB  111.348 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.348 MiB    0.000 MiB   	for j in range(n_iter):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.980 MiB  110.980 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.195 MiB    0.215 MiB   	for j in range(n_iter):
+    45                             
+    46  111.195 MiB    0.000 MiB   	    45                             
+    46  111.348 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.562 MiB    0.215 MiB   	    comm.Barrier()
+    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.195 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.195 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.195 MiB    0.000 MiB   	    return A_shifted
+
+
+    49                             
+    50  111.562 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.562 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.156 MiB  111.156 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.156 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.914 MiB  110.914 MiB   @profile
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.129 MiB  111.129 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.129 MiB    0.000 MiB   	for j in range(n_iter):
+    46  111.156 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.156 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.156 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.156 MiB    0.000 MiB   	    return A_shifted
+
+
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.914 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.125 MiB    0.211 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.125 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    45                             
+    46  111.129 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.129 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.129 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.129 MiB    0.000 MiB   	    return A_shifted
+    50  111.125 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.125 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.594 MiB  111.594 MiB   @profile
+
+
+    42  111.516 MiB  111.516 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.020 MiB  111.020 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.020 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.020 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.594 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.594 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.594 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.594 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.594 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.137 MiB  111.137 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.137 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.535 MiB  110.535 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.535 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    47                             
+    48  111.020 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.020 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    46  111.137 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.137 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.137 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.137 MiB    0.000 MiB   	    return A_shifted
+
+
+    46  110.535 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.754 MiB    0.219 MiB   	    comm.Barrier()
+    49                             
+    50  110.754 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.754 MiB    0.000 MiB   	    return A_shifted
+
+
+    51  111.020 MiB    0.000 MiB   	    return A_shifted
+
+
+    44  111.516 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.516 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.516 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.516 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.516 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.578 MiB  110.578 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.789 MiB    0.211 MiB   	for j in range(n_iter):
+    45                             
+    46  110.789 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.789 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.789 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.789 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.734 MiB  110.734 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.734 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.734 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.734 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  110.734 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  110.734 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.273 MiB  111.273 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.273 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.273 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.488 MiB    0.215 MiB   	    comm.Barrier()
+    49                             
+    50  111.488 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.488 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.902 MiB  110.902 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.113 MiB    0.211 MiB   	for j in range(n_iter):
+    45                             
+    46  111.113 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.113 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.113 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.113 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  111.090 MiB  111.090 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  111.090 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  111.090 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  111.090 MiB    0.000 MiB   	    comm.Barrier()
+    49                             
+    50  111.090 MiB    0.000 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.090 MiB    0.000 MiB   	    return A_shifted
+
+
+Filename: Task8.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+    42  110.434 MiB  110.434 MiB   @profile
+    43                             def fun(n_iter, A, N, N_start, N_end):
+    44  110.434 MiB    0.000 MiB   	for j in range(n_iter):
+    45                             
+    46  110.434 MiB    0.000 MiB   	    A_shifted = shift(A[:, [N_start - 1 % N] + list(range(N_start, N_end + 1))])
+    47                             
+    48  110.707 MiB    0.273 MiB   	    comm.Barrier()
+    49                             
+    50  111.848 MiB    1.141 MiB   	    A_shifted = comm.gather(A_shifted, 0)
+    51  111.848 MiB    0.000 MiB   	    return A_shifted
+
+
